@@ -5,6 +5,7 @@ class Employee
         @title = title
         @salary = salary
         @boss = boss 
+        @boss.employees << self
     end
 
 
@@ -12,7 +13,7 @@ class Employee
         bonus = self.salary * multiplier
     end 
 
-    
+
 
 
 
