@@ -8,7 +8,6 @@ class Queen < Piece
     end 
   
     def symbol
-      color == :white # color and what it looks like? 
     end
   
   

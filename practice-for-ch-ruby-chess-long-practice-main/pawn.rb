@@ -5,7 +5,6 @@ class Pawn < Piece
     def initialize(color, board, pos)
         super 
 
-
     end 
 
 

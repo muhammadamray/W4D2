@@ -8,16 +8,12 @@ class Rook < Piece
     end 
   
     def symbol
-      color == :white # color and what it looks like? 
     end
   
   
     def move_dirs
       horizontal_dirs
     end
-
-
-
 
 
 
