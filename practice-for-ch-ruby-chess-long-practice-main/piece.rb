@@ -1,4 +1,4 @@
-class Piece 
+class Piece                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     attr_reader :color, :board
     attr_accessor :pos
 
@@ -6,12 +6,13 @@ class Piece
     @color = color
     @board = board
     @pos = pos
-
     board.add_piece(self, pos)
   end
 
 
-
+    def empty?
+        false
+    end 
 
 
 

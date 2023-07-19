@@ -1,6 +1,9 @@
+require_relative "piece.rb"
+
 class Board 
     def initialize
         @rows = Array.new(8) { Array.new(8) }
+        populate
     end
 
     def [](pos)
@@ -30,8 +33,28 @@ class Board
         self[pos] = piece
     end
 
+   
+    def populate
+
+        # Pawn starting Locations 
+        (0..7).each do |col|
+            Pawn.new(:black, self, [6, col])
+            Pawn.new(:white, self, [1, col])
+        end 
+
+        #Pieces 
+        (0..7).each do |col|
+            Piece.new(:black, self, [7, col])
+            Piece.new(:white, self, [0, col])
+        end 
 
 
+
+
+
+
+
+    end 
 
 
 
